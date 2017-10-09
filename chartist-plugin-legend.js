@@ -142,6 +142,32 @@
             });
 
             if (options.clickable) {
+              const MAX_VISIBLE_LINE_INDEX = 3;
+              [].forEach.call(legendElement.getElementsByTagName('li'), function(item) {
+                if (item.parentNode !== legendElement || !item.hasAttribute('data-legend'))
+                  return;
+                var seriesIndex = parseInt(item.getAttribute('data-legend'));
+                if (seriesIndex > MAX_VISIBLE_LINE_INDEX) {
+                  removedSeries.push(seriesIndex);
+                  item.classList.add('inactive');
+                }
+
+                var seriesCopy = originalSeries.slice(0);
+                if (useLabels) {
+                  var labelsCopy = originalLabels.slice(0);
+                }
+                removedSeries.sort(compareNumbers).reverse();
+
+                removedSeries.forEach(function (series) {
+                  seriesCopy.splice(series, 1);
+                  if (useLabels) {
+                    labelsCopy.splice(series, 1);
+                  }
+                });
+
+                chart.data.series = seriesCopy;
+              });
+              
                 legendElement.addEventListener('click', function (e) {
                     var li = e.target;
                     if (li.parentNode !== legendElement || !li.hasAttribute('data-legend'))
