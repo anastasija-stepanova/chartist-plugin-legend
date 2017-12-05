@@ -167,7 +167,11 @@
 
                 chart.data.series = seriesCopy;
               });
+<<<<<<< HEAD
               
+=======
+
+>>>>>>> Добавлены отсутствующие файлы
                 legendElement.addEventListener('click', function (e) {
                     var li = e.target;
                     if (li.parentNode !== legendElement || !li.hasAttribute('data-legend'))
