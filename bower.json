@@ -10,14 +10,14 @@
     "Chawalit Limsowan <chawalit@pinacono.com>"
   ],
   "dependencies": {
-    "chartist": "~0.9.4"
+    "chartist": "~0.9.0"
   },
   "license": "MIT",
   "keywords": [
     "chartist",
     "legend"
   ],
-  "homepage": "https://github.com/Pinacono/chartist-plugin-legend",
+  "homepage": "https://github.com/anastasija-stepanova/chartist-plugin-legend.git",
   "moduleType": [
     "node"
   ],
