@@ -5,19 +5,20 @@
     "chartist-plugin-legend.js",
     "chartist-plugin-legend.scss"
   ],
+  "version": "v1",
   "authors": [
     "Kees Kluskens <kees@codeyellow.nl>",
     "Chawalit Limsowan <chawalit@pinacono.com>"
   ],
   "dependencies": {
-    "chartist": "~0.9.4"
+    "chartist": "~0.9.0"
   },
   "license": "MIT",
   "keywords": [
     "chartist",
     "legend"
   ],
-  "homepage": "https://github.com/Pinacono/chartist-plugin-legend",
+  "homepage": "https://github.com/anastasija-stepanova/chartist-plugin-legend.git",
   "moduleType": [
     "node"
   ],
